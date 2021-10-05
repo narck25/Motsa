@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B644AD8-B9BB-4A31-91CD-5C9329581421}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Motsa1</RootNamespace>
+    <AssemblyName>Motsa1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas.Designer.cs">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsigancionEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsigancionEquipos.Designer.cs">
+      <DependentUpon>AsigancionEquipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionCelulares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionCelulares.Designer.cs">
+      <DependentUpon>AsignacionCelulares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Atalappc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atalappc.Designer.cs">
+      <DependentUpon>Atalappc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Atalappctabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atalappctabla.Designer.cs">
+      <DependentUpon>Atalappctabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscadorCorreos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscadorCorreos.Designer.cs">
+      <DependentUpon>BuscadorCorreos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartas.Designer.cs">
+      <DependentUpon>Cartas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CelularesIpad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CelularesIpad.Designer.cs">
+      <DependentUpon>CelularesIpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CelularesIpadtabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CelularesIpadtabla.Designer.cs">
+      <DependentUpon>CelularesIpadtabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Correos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correos.Designer.cs">
+      <DependentUpon>Correos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lineas.Designer.cs">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lineastabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lineastabla.Designer.cs">
+      <DependentUpon>Lineastabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marcas.Designer.cs">
+      <DependentUpon>Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcasTable.Designer.cs">
+      <DependentUpon>MarcasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1.Designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modelo.Designer.cs">
+      <DependentUpon>Modelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloTable.Designer.cs">
+      <DependentUpon>ModeloTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Cartas.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalMotsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalMotsa.Designer.cs">
+      <DependentUpon>PersonalMotsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personaltable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personaltable.Designer.cs">
+      <DependentUpon>personaltable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="So.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="So.Designer.cs">
+      <DependentUpon>So.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SO_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SO_Table.Designer.cs">
+      <DependentUpon>SO_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablalaptops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablalaptops.Designer.cs">
+      <DependentUpon>Tablalaptops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Typepcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Typepcs.Designer.cs">
+      <DependentUpon>Typepcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypepcsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypepcsTable.Designer.cs">
+      <DependentUpon>TypepcsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ubicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ubicaciones.Designer.cs">
+      <DependentUpon>ubicaciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Areas.resx">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigancionEquipos.resx">
+      <DependentUpon>AsigancionEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionCelulares.resx">
+      <DependentUpon>AsignacionCelulares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atalappc.resx">
+      <DependentUpon>Atalappc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atalappctabla.resx">
+      <DependentUpon>Atalappctabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscadorCorreos.resx">
+      <DependentUpon>BuscadorCorreos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartas.resx">
+      <DependentUpon>Cartas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CelularesIpad.resx">
+      <DependentUpon>CelularesIpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CelularesIpadtabla.resx">
+      <DependentUpon>CelularesIpadtabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correos.resx">
+      <DependentUpon>Correos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lineas.resx">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lineastabla.resx">
+      <DependentUpon>Lineastabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcas.resx">
+      <DependentUpon>Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcasTable.resx">
+      <DependentUpon>MarcasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modelo.resx">
+      <DependentUpon>Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloTable.resx">
+      <DependentUpon>ModeloTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalMotsa.resx">
+      <DependentUpon>PersonalMotsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personaltable.resx">
+      <DependentUpon>personaltable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="So.resx">
+      <DependentUpon>So.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SO_Table.resx">
+      <DependentUpon>SO_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablalaptops.resx">
+      <DependentUpon>Tablalaptops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Typepcs.resx">
+      <DependentUpon>Typepcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypepcsTable.resx">
+      <DependentUpon>TypepcsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ubicaciones.resx">
+      <DependentUpon>ubicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\BD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\BD.edmx.diagram">
+      <DependentUpon>BD.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo blanco 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Motsa 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Motsa 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
